@@ -1,0 +1,19 @@
+
+<div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button id="accordion-button-1" [attr.aria-expanded]="isAccordionExpanded ? 'true' : 'false'" (click)="toggleAccordion()">
+          Tkk
+          <span class="accordion-title">Why is the moon sometimes visible during the day?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content" [ngClass]="{'expanded': isAccordionExpanded}">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
